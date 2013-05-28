@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+YummyThings app
+index.html
+
+PhoneGap example application
+Created by Saul Zukauskas // @sauliuz
+PopularOwl Labs // www.popularowl.com
+@20.05.2013
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+       
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/cordova-2.6.0.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/webService.js"></script>
+ 
+        <title>Yummy Things</title>
+    </head>
+    
+
+    <body onload="init()">
+        
+        <div id="locationplaceholder"></div> 
+
+        <div id="menu">    
+            <input id="question" class="selection" type="text"></input>
+            <div class="share" type="button" onclick="callWebService()">Find recipes</div>
+            <div class="content" id="yummy"></div>
+        </div>
+    </body>
+</html>
